@@ -1,0 +1,146 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", san-sarif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.header {
+  padding: 16px 0;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__nav-toggle {
+  display: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item + .menu__item {
+  margin-left: 53px;
+}
+
+.menu__link {
+  font-family: "Open Sans", san-sarif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #d94343;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__link:hover {
+  color: #ea9898;
+}
+
+.logo {
+  max-width: 255px;
+}
+
+.hero {
+  min-height: 544px;
+  padding: 140px 0 89px;
+  text-align: center;
+  background-image: url("../images/img 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero_title {
+  font-family: "Open Sans", san-sarif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.5em;
+}
+
+.hero_info {
+  display: inline-block;
+  margin: 0 0 45px;
+  font-family: "Lato", san-sarif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.hero_info-secondary {
+  margin: 0 0 45px;
+  font-family: "Open Sans", san-sarif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 37, 51, 0.4);
+  z-index: -1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 21px 56px;
+  color: #fff;
+  font-family: "Lato", san-sarif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
